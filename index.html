@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Link Shortener</title>
+
 </head>
 <body>
 <main class="main">
@@ -16,9 +17,10 @@
         <p class="shortener__text">
             Enter a link and get a shortened link!
         </p>
-        <form class="shortener__form" action="/shorten" method="post">
-            <input class="shortener__input" type="text" name="url" placeholder="Enter a link">
-            <button class="shortener__btn" type="submit">Shorten</button>
+        <form class="shortener__form" >
+            <input id="url" class="shortener__input" type="text" name="url" placeholder="Enter a link" value="">
+            <button type="button" class="shortener__btn" onclick="shortURL()">Shorten</button>
+            <div id="result" class="result"></div>
         </form>
     </div>
 </main>
